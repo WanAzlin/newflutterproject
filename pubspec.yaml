@@ -40,7 +40,12 @@ flutter:
   uses-material-design: true
   assets:
     - images/flash-sale.jpg
+    - images/img1.jpg
+    - images/img2.jpg
+    - images/img3.jpg
+
   fonts:
     - family: Pacifico
       fonts:
         - asset: fonts/Pacifico-Regular.ttf
+       
