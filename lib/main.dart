@@ -106,7 +106,8 @@ class HomeScreen extends StatelessWidget {
                     context,
                     MaterialPageRoute(builder: (context) {
                       return PortfolioScreen();
-                    }),
+                    }
+                  ),
                   );
                 },
                 child: Container(
@@ -139,7 +140,8 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        )
+      );
   }
 }
 
@@ -167,7 +169,17 @@ class PortfolioScreen extends StatelessWidget {
           const SizedBox(
               height: 30.0,
             ),
-          Container(
+         GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return FirstPage();
+                    }
+                  ),
+                  );
+                },
+          child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 20.0),
                 padding: const EdgeInsets.symmetric(
                   vertical: 20.0,
@@ -222,10 +234,21 @@ class PortfolioScreen extends StatelessWidget {
                 ),
               
               ),
+          ),
             const SizedBox(
               height: 30.0,
             ),
-                 Container(
+            GestureDetector(
+               onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return SecondPage();
+                    }
+                  ),
+                  );
+                },
+            child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 20.0),
                 padding: const EdgeInsets.symmetric(
                   vertical: 20.0,
@@ -280,10 +303,21 @@ class PortfolioScreen extends StatelessWidget {
                 ),
               
               ),
+            ),
               const SizedBox(
                   height: 30.0,
               ),
-               Container(
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return ThirdPage();
+                    }
+                  ),
+                  );
+                },
+              child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 20.0),
                 padding: const EdgeInsets.symmetric(
                   vertical: 20.0,
@@ -338,6 +372,7 @@ class PortfolioScreen extends StatelessWidget {
                 ),
               
               ),
+              ),
               const SizedBox(
                     height: 30.0,
                 ),
@@ -377,5 +412,45 @@ class PortfolioScreen extends StatelessWidget {
     );
   }
 }
+//firstpage with no content
+class FirstPage extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return  Scaffold(
+      appBar: AppBar(
+        title: const Text('First Page'),
+        backgroundColor: Colors.teal,
+        foregroundColor: Colors.white,
+      ),
+    );
+  }
+}
+//secondpage with no context
+class SecondPage extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return  Scaffold(
+      appBar: AppBar(
+        title: const Text('Second Page'),
+        backgroundColor: Colors.teal,
+        foregroundColor: Colors.white,
+      ),
+    );
+  }
+}
 
+
+//ThirdPage with no context
+class ThirdPage extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return  Scaffold(
+      appBar: AppBar(
+        title: const Text('Third Page'),
+        backgroundColor: Colors.teal,
+        foregroundColor: Colors.white,
+      ),
+    );
+  }
+}
 
