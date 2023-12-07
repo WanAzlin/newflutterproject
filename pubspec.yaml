@@ -43,6 +43,12 @@ flutter:
     - images/img1.jpg
     - images/img2.jpg
     - images/img3.jpg
+    - images/img1-1.png
+    - images/img1-2.png
+    - images/img1-3.png
+    - images/img3-1.jpg
+    - images/img3-2.jpg
+    - images/img3-3.jpg 
 
   fonts:
     - family: Pacifico

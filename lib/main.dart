@@ -422,6 +422,59 @@ class FirstPage extends StatelessWidget{
         backgroundColor: Colors.teal,
         foregroundColor: Colors.white,
       ),
+      body: Center(
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 30.0,),
+                padding: const EdgeInsets.symmetric(
+                  vertical: 20.0,
+                  horizontal: 100.0,
+                ),
+                color: Colors.white,
+        child: const Column(
+           
+          children: [
+            Text('A passwordless (biometric based) web authentication system', 
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.teal,
+            ),
+          ),
+          SizedBox(
+                    height: 25.0,
+          ),
+          Image(image: 
+                   AssetImage('images/img1-1.png'),
+                   height: 230.0,
+                   width: 700.0,
+                   ),
+          SizedBox(
+                    height: 25.0,
+          ),
+          Image(image: 
+                   AssetImage('images/img1-2.png'),
+                   height: 230.0,
+                   width: 700.0,
+                   ),
+          SizedBox(
+                    height: 25.0,
+          ),
+          Image(image: 
+                   AssetImage('images/img1-3.png'),
+                   height: 230.0,
+                   width: 700.0,
+                   ),
+        Text('An implementation that defines data states using A passwordless (biometric based) web authentication system.', 
+            style: TextStyle(
+              fontSize: 15.0,
+              color: Colors.grey,
+            ),
+          ),
+          
+           ],
+          )
+        ),
+      ),
     );
   }
 }
@@ -430,10 +483,51 @@ class SecondPage extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return  Scaffold(
+      backgroundColor: Colors.grey.shade300,
       appBar: AppBar(
         title: const Text('Second Page'),
         backgroundColor: Colors.teal,
         foregroundColor: Colors.white,
+      ),
+     body: Center(
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 30.0,),
+                padding: const EdgeInsets.symmetric(
+                  vertical: 20.0,
+                  horizontal: 100.0,
+                ),
+                color: Colors.white,
+        child: const Column(
+           
+          children: [
+            Text('Handling Asynchronous Data in Flutter with Generic Classes', 
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.teal,
+            ),
+          ),
+          SizedBox(
+                    height: 25.0,
+                ),
+          Image(image: 
+                   AssetImage('images/img2.jpg'),
+                   height: 400.0,
+                   width: 700.0,
+                   ),
+          SizedBox(
+                    height: 25.0,
+          ),
+        Text('An implementation that defines data states using a generic class and returns widgets based on the current state.', 
+            style: TextStyle(
+              fontSize: 15.0,
+              color: Colors.grey,
+            ),
+          ),
+          
+           ],
+          )
+        ),
       ),
     );
   }
@@ -449,6 +543,73 @@ class ThirdPage extends StatelessWidget{
         title: const Text('Third Page'),
         backgroundColor: Colors.teal,
         foregroundColor: Colors.white,
+      ),
+      body: Center(
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 30.0,),
+                padding: const EdgeInsets.symmetric(
+                  vertical: 20.0,
+                  horizontal: 100.0,
+                ),
+                color: Colors.white,
+        child: const Column(
+           
+          children: [
+            Text('A Daily News App built using Flutter framework', 
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.teal,
+            ),
+          ),
+          SizedBox(
+                    height: 25.0,
+          ),
+          Image(image: 
+                   AssetImage('images/img3-1.jpg'),
+                   height: 350.0,
+                   width: 700.0,
+                   ),
+           SizedBox(
+                    height: 10.0,
+          ),
+           Text('Github', 
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              
+            ),
+          ),
+            Text('A Flutter package multi_link_text allows you to create text with clickable links and additional styling options.', 
+            style: TextStyle(
+              fontSize: 15.0,
+              color: Colors.grey,
+            ),
+          ),
+          SizedBox(
+                    height: 10.0,
+          ),
+          Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 
+            style: TextStyle(
+              fontSize: 15.0,
+              color: Colors.grey,
+            ),
+          ),
+           SizedBox(
+                    height: 10.0,
+          ),
+          Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 
+            style: TextStyle(
+              fontSize: 15.0,
+              color: Colors.grey,
+            ),
+          ),
+
+           ],
+          
+          )
+        ),
       ),
     );
   }
