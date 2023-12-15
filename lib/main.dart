@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               const Text(
-                'UI/UX Designer',
+                'UI/UX Designer 2',
                 style: TextStyle(
                   fontSize: 30.0,
                   fontWeight: FontWeight.bold,
@@ -40,6 +40,7 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 10.0,
               ),
+              
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 20.0),
                 padding: const EdgeInsets.symmetric(
@@ -70,7 +71,17 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 10.0,
               ),
-              Container(
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return TestPage1();
+                    }
+                  ),
+                  );
+                },
+              child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 20.0),
                 padding: const EdgeInsets.symmetric(
                   vertical: 12.0,
@@ -96,6 +107,7 @@ class HomeScreen extends StatelessWidget {
                     )
                   ],
                 ),
+              ),
               ),
               const SizedBox(
                 height: 10.0,
@@ -573,7 +585,7 @@ class ThirdPage extends StatelessWidget{
            SizedBox(
                     height: 10.0,
           ),
-           Text('Github', 
+           Text('Multi Link Text', 
             style: TextStyle(
               fontSize: 20.0,
               fontWeight: FontWeight.bold,
@@ -596,15 +608,7 @@ class ThirdPage extends StatelessWidget{
               color: Colors.grey,
             ),
           ),
-           SizedBox(
-                    height: 10.0,
-          ),
-          Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 
-            style: TextStyle(
-              fontSize: 15.0,
-              color: Colors.grey,
-            ),
-          ),
+        
 
            ],
           
@@ -614,4 +618,210 @@ class ThirdPage extends StatelessWidget{
     );
   }
 }
+
+
+class TestPage1 extends StatelessWidget {
+ 
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.teal,
+        appBar: AppBar(
+          title: const Text('Portfolio'),
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.teal,
+        ),
+        body: ListView(
+          children:  [
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return ThirdPage();
+                    }
+                  ),
+                  );
+                },
+           child: Container(
+              margin: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.symmetric(
+                  vertical: 30.0,
+                  horizontal: 24.0,
+                ),
+                color: Colors.white,
+              child: const Column(
+                   children: [
+                     Image(image: 
+                       AssetImage('images/img1.jpg'),
+                       height: 150.0,
+                       width: 350.0,
+                       ),
+                        SizedBox(
+                          height: 10.0,
+                       ),
+                       Text(
+                          'Handling Asynchronous Data in Flutter with Generic Classes',
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.teal,
+                            
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                          style: TextStyle(
+                            fontSize: 12.0,
+                            color: Colors.grey,
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                         SizedBox(
+                          height: 10.0,
+                        ),
+                        Text(
+                          '02 DECEMBER 2023',
+                          style: TextStyle(
+                            fontSize: 10.0,
+                            fontWeight:FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                   ],
+                 ),
+            ),
+            ),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return ThirdPage();
+                    }
+                  ),
+                  );
+                },
+            child: Container(
+              margin: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.symmetric(
+                  vertical: 30.0,
+                  horizontal: 24.0,
+                ),
+                color: Colors.white,
+              child: const Column(
+                   children: [
+                     Image(image: 
+                       AssetImage('images/img2.jpg'),
+                       height: 150.0,
+                       width: 350.0,
+                       ),
+                        SizedBox(
+                          height: 10.0,
+                       ),
+                       Text(
+                          'A passwordless (biometric based) web authentication system',
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.teal,
+                            
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                          style: TextStyle(
+                            fontSize: 12.0,
+                            color: Colors.grey,
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                         SizedBox(
+                          height: 10.0,
+                        ),
+                        Text(
+                          '02 DECEMBER 2023',
+                          style: TextStyle(
+                            fontSize: 10.0,
+                            fontWeight:FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                   ],
+                 ),
+            ),
+            ),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return ThirdPage();
+                    }
+                  ),
+                  );
+                },
+            child: Container(
+              margin: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.symmetric(
+                  vertical: 30.0,
+                  horizontal: 24.0,
+                ),
+                color: Colors.white,
+              child: const Column(
+                   children: [
+                     Image(image: 
+                       AssetImage('images/img3.jpg'),
+                       height: 150.0,
+                       width: 350.0,
+                       ),
+                        SizedBox(
+                          height: 10.0,
+                       ),
+                       Text(
+                          'A Daily News App built using Flutter Framework Mobile App',
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.teal,
+                            
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                          style: TextStyle(
+                            fontSize: 12.0,
+                            color: Colors.grey,
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                         SizedBox(
+                          height: 10.0,
+                        ),
+                        Text(
+                          '02 DECEMBER 2023',
+                          style: TextStyle(
+                            fontSize: 10.0,
+                            fontWeight:FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                   ],
+                 ),
+            ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 
